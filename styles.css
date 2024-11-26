@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(-45deg, #d6d8f8, #dcf5f1, #f0e0fc);
+    font-family: "IBM Plex Sans KR", serif;
+}
+
+.ibm-plex-sans-kr-regular {
+    font-family: "IBM Plex Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.container {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: white;
+    width: 150Vh;
+    height: 9vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 61vh;
+}
+
+h1 {
+    margin-top: 20px;
+    color:rgb(77, 83, 88);
+    font-size: 70px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.555) ;
+    
+}
+
+a {
+    display: block;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #c9cfe5a2;
+    color: rgb(77, 83, 88);
+    border-radius: 8px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: right;
+    display: inline-block;
+    
+}
+
+
+ul {
+    list-style: none;
+    gap: 50px;
+    margin: 10px;
+    align-items: center;
+}
+
+ul > li {
+    font-size: medium;
+    display: flex;
+    gap: 10px;
+    color: rgb(58, 56, 64);
+}
+
+h2 {
+   color: rgb(50, 54, 57);
+   background-color: rgb(216, 220, 244);
+   padding-right: 10px;
+   padding-left: 10px;
+}
+
+.memo {
+    margin-top: 10px;
+    font-size:small;
+    color: #418481;
+    text-decoration:underline;    
+}
