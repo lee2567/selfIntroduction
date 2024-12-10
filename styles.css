@@ -1,16 +1,29 @@
-body {
-    background: linear-gradient(-45deg, #d6d8f8, #dcf5f1, #f0e0fc);
-    font-family: "IBM Plex Sans KR", serif;
-}
 
-.ibm-plex-sans-kr-regular {
-    font-family: "IBM Plex Sans KR", serif;
-    font-weight: 400;
-    font-style: normal;
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(90deg, #e8e4c3, #c5c5e7, #cde5ca);
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease infinite;
   }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
   
 
 .container {
+    font-family: "Amatic SC", sans-serif;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -44,7 +57,8 @@ h1 {
     color:rgb(77, 83, 88);
     font-size: 70px;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.555) ;
+    font-family: "Amatic SC", "Moirai One";
+    
     
 }
 
@@ -53,14 +67,13 @@ a {
     padding: 3px;
     text-align: center;
     text-decoration: none;
-    background-color: #c9cfe5a2;
     color: rgb(77, 83, 88);
     border-radius: 8px;
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
     align-items: right;
     display: inline-block;
-    
+    transition: 0.3s ease;
 }
 
 
@@ -72,7 +85,7 @@ ul {
 }
 
 ul > li {
-    font-size: medium;
+    
     display: flex;
     gap: 10px;
     color: rgb(58, 56, 64);
@@ -83,11 +96,16 @@ h2 {
    background-color: rgb(216, 220, 244);
    padding-right: 10px;
    padding-left: 10px;
+   
 }
 
 .memo {
     margin-top: 10px;
-    font-size:small;
+    
     color: #418481;
     text-decoration:underline;    
+}
+
+#p {
+    transition: font-size 0.3s ease; /* 부드러운 애니메이션 효과 */
 }
